@@ -1,5 +1,5 @@
 # dotnet-macos-keychainerror
-Min-repro example for MacOS error: -25294 w/ dotnet 3.q on macOS 10.14 Mojave and 10.15 Catalina
+Min-repro example for MacOS error: -25294 w/ dotnet core 2.1/3.1 on macOS 10.14 Mojave and 10.15 Catalina
 
 # Program Details
 This program imports the `System.Security.Cryptography` namespace and runs a one-line hello-world program.
@@ -31,7 +31,7 @@ I was also able to find specific descriptions of these functions [here][3].
 # How to Run
 ## Requirements:
 * macOS 10.14 Mojave or 10.15 Catalina (I do not have access to a machine running previous version of macOS so cannot confirm it occurs on those versions)
-* .NET Core 3.1
+* .NET Core 2.1 or 3.1
 
 ## Steps to reproduce:
 1. Verify there are no keychain errors in the last minute using the command `log show --last 1m | grep "MacOS error: -25294"`
